@@ -4,22 +4,25 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "airbnb-base",
+    'airbnb-base',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
   },
   plugins: [
-    "@typescript-eslint",
-    "cypress"
+    '@typescript-eslint',
+    'cypress',
   ],
-  "rules": {
+  rules: {
     "quotes": ["error", "double"],
     "cypress/no-assigning-return-values": "error",
     "cypress/no-unnecessary-waiting": "error",
     "cypress/assertion-before-screenshot": "warn",
     "cypress/no-force": "warn"
+  },
+  env: {
+    "cypress/globals": true,
   },
 };
