@@ -4,7 +4,9 @@
   "description": "This is a Workshop about Cypress",
   "main": "index.js",
   "scripts": {
-    "test:open": "cypress open"
+    "test:open": "npm run lint && cypress open",
+    "lint": "eslint ./cypress/integration/**/*.ts",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,18 @@
   },
   "homepage": "https://github.com/MrM0ra/cypress-training#readme",
   "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.9.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-import": "^2.23.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0"
+  },
+  "dependencies": {
     "cypress": "^8.0.0"
   }
 }
