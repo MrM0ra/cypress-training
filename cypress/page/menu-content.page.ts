@@ -3,7 +3,7 @@ class MenuContentPage {
   private menuContentPageURL: string
 
   constructor() {
-    this.tShirtMenu = '#block_top_menu > ul > li:nth-child(3) > a';
+    this.tShirtMenu = '#block_top_menu > ul > li > [href*="id_category=5"]';
     this.menuContentPageURL = 'http://automationpractice.com/'
   }
 

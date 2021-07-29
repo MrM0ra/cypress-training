@@ -6,7 +6,7 @@ class PaymentStep {
 	constructor() {
 		this.bank = '.bankwire';
 		this.button = '.cart_navigation span';
-		this.label = '#center_column > div > p > strong';
+		this.label = '.cheque-indent > strong';
 	}
 
 	public selectBank(): void {
