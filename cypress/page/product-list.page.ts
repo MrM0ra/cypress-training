@@ -1,5 +1,4 @@
 class ProductList{
-
 	private tShirt: string;
 	private button: string;
 

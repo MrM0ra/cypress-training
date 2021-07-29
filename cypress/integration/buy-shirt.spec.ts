@@ -23,9 +23,7 @@ describe("Buy a t-shirt", () => {
     productList.selectTShirt();
     productList.proceedToCheckout();
     shopping.proceedToCheckout();
-    login.typeEmail();
-    login.typePwd();
-    login.signIn();
+    login.signIn("aperdomobo@gmail.com", "WorkshopProtractor");
     address.proceedToCheckout();
     shipping.checkTermsAgreement();
     shipping.proceedToCheckout();

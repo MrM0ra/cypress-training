@@ -9,15 +9,9 @@ class Login{
 		this.submit = '#SubmitLogin span';
 	}
 
-	public typeEmail(): void {
-		cy.get(this.email).type('aperdomobo@gmail.com')
-	}
-
-	public typePwd(): void {
-		cy.get(this.password).type('WorkshopProtractor')
-	}
-
-	public signIn(): void {
+	public signIn(userEmail: string, userPwd: string): void {
+		cy.get(this.email).type(userEmail)
+		cy.get(this.password).type(userPwd)
 		cy.get(this.submit).click()
 	}
 }

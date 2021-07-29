@@ -2,6 +2,7 @@ class PaymentStep {
 	private bank: string;
 	private button: string;
 	private label: string;
+	
 	constructor() {
 		this.bank = '.bankwire';
 		this.button = '.cart_navigation span';
