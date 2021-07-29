@@ -16,7 +16,7 @@ class PaymentStep {
 		cy.get(this.button).click()
 	}
 
-	public compare(): void {
+	public compare(): Cypress.Chainable {
 		return cy.get(this.label);
 	}
 }
