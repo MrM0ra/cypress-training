@@ -5,10 +5,8 @@ class ShoppingCart{
 		this.button = ".cart_navigation span";
 	}
 
-	public proceed(): void {
+	public proceedToCheckout(): void {
 		cy.get(this.button).click()
 	}
-
 }
-
 export { ShoppingCart }

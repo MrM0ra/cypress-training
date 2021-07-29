@@ -7,13 +7,12 @@ class ShippingStep{
 		this.button = '.cart_navigation span';
 	}
 
-	public check(): void {
+	public checkTermsAgreement(): void {
 		cy.get(this.checkBox).click();
 	}
 
-	public proceed() :void {
+	public proceedToCheckout() :void {
 		cy.get(this.button).click();
 	}
 }
-
 export { ShippingStep }

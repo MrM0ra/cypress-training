@@ -17,8 +17,7 @@ class PaymentStep {
 	}
 
 	public compare(): void {
-		cy.get(this.label).should('have.text', 'Your order on My Store is complete.');
+		return cy.get(this.label);
 	}
 }
-
 export { PaymentStep }

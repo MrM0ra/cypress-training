@@ -12,10 +12,8 @@ class ProductList{
 		cy.get(this.tShirt).click()
 	}
 
-	public continue(): void {
+	public proceedToCheckout(): void {
 		cy.get(this.button).click()
 	}
-
 }
-
 export { ProductList }

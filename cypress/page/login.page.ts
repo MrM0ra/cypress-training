@@ -21,5 +21,4 @@ class Login{
 		cy.get(this.submit).click()
 	}
 }
-
 export { Login }
