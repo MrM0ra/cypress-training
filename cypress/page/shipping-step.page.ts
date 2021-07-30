@@ -3,8 +3,8 @@ class ShippingStep{
 	private button: string;
 
 	constructor(){
-		this.checkBox = '.checkbox span';
-		this.button = '.cart_navigation span';
+		this.checkBox = '#cgv';
+		this.button = "[name='processCarrier']";
 	}
 
 	public checkTermsAgreement(): void {
